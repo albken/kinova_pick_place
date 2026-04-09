@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>kinova_pick_place</name>
+  <version>0.1.0</version>
+  <description> Package for Kinova Gen3 6DOF Pick Place using MoveIt 2 and MoveIt Task Constructor.
+    Includes Point Cloud Cube detection PCL with TF publish and cube color choice with Vocal
+    command. </description>
+  <maintainer email="albert.kendra01@gmail.com">Albert Kendra</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>OpenCV</depend>
+
+  <depend>rclcpp</depend>
+
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>moveit_msgs</depend>
+  <depend>shape_msgs</depend>
+  <depend>std_srvs</depend>
+
+  <depend>tf2_eigen</depend>
+  <depend>tf2_ros</depend>
+  <depend>tf2_geometry_msgs</depend>
+
+  <depend>pcl_conversions</depend>
+  <depend>pcl_ros</depend>
+
+  <depend>moveit_core</depend>
+  <depend>moveit_ros_planning_interface</depend>
+  <depend>moveit_ros_planning</depend>
+
+  <depend>moveit_task_constructor_core</depend>
+  <depend>moveit_task_constructor_msgs</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>moveit_configs_utils</exec_depend>
+
+  <exec_depend>moveit_task_constructor_capabilities</exec_depend>
+  <exec_depend>moveit_task_constructor_visualization</exec_depend>
+  <exec_depend>kinova_gen3_6dof_robotiq_2f_85_moveit_config</exec_depend>
+  <exec_depend>kortex_bringup</exec_depend>
+  <exec_depend>kinova_vision</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
